@@ -4,6 +4,21 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+ * 0001 - Two Sum
+ * https://leetcode.com/problems/two-sum/
+ *
+ * Given an integer array nums and an integer target, return the indices of
+ * two different elements whose values add up to target.
+ *
+ * Example: nums = [2, 7, 11, 15], target = 9 -> [0, 1]
+ *
+ * Approach: While scanning the array, store number -> index in a HashMap.
+ * For each number, first look for target - number so the same index is never
+ * used twice. This also handles duplicates such as [3, 3].
+ *
+ * Time: O(n) | Extra space: O(n)
+ */
 public class Solution1WithoutStreams {
 
     public static int[] twoSum(int[] nums, int target) {

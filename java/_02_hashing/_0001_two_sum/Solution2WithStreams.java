@@ -7,6 +7,21 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.stream.IntStream;
 
+/*
+ * 0001 - Two Sum
+ * https://leetcode.com/problems/two-sum/
+ *
+ * Given an integer array nums and an integer target, return the indices of
+ * two different elements whose values add up to target.
+ *
+ * Example: nums = [2, 7, 11, 15], target = 9 -> [0, 1]
+ *
+ * Stream-based version of the HashMap approach. The map stores number ->
+ * index, and each step searches for target - current number before storing
+ * the current number.
+ *
+ * Time: O(n) | Extra space: O(n)
+ */
 public class Solution2WithStreams {
 
     public static void main(String[] args) {

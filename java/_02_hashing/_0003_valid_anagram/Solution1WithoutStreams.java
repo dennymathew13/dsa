@@ -4,6 +4,22 @@ package _02_hashing._0003_valid_anagram;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+ * 0003 - Valid Anagram
+ * https://leetcode.com/problems/valid-anagram/
+ *
+ * Given strings s and t, return true if t is an anagram of s. Anagrams have
+ * exactly the same characters with exactly the same frequencies, regardless
+ * of order.
+ *
+ * Examples: ("anagram", "nagaram") -> true; ("rat", "car") -> false
+ *
+ * Approach: Count each character in s, then decrement its count while
+ * scanning t. Different lengths or a missing/exhausted character means the
+ * strings are not anagrams.
+ *
+ * Time: O(n) expected | Extra space: O(k), k = distinct characters
+ */
 public class Solution1WithoutStreams {
 
     public static boolean isAnagram(String s, String t) {

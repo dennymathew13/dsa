@@ -1,4 +1,21 @@
 
+"""
+0003 - Valid Anagram
+https://leetcode.com/problems/valid-anagram/
+
+Given strings s and t, return True if t is an anagram of s. Anagrams contain
+exactly the same characters with exactly the same frequencies, regardless of
+order.
+
+Examples: ("anagram", "nagaram") -> True; ("rat", "car") -> False
+
+Approach: Count characters in s, then decrement those counts while scanning t.
+Different lengths or a missing/exhausted character means they are not anagrams.
+
+Time: O(n) expected | Extra space: O(k), k = distinct characters
+"""
+
+
 def is_anagram(s: str, t: str) -> bool:
     if len(s) != len(t):
         return False
