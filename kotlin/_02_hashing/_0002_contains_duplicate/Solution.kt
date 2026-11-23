@@ -1,3 +1,4 @@
+package _02_hashing._0002_contains_duplicate
 
 /*
  * 0002 - Contains Duplicate

@@ -1,3 +1,4 @@
+package _02_hashing._0003_valid_anagram
 
 /*
  * 0003 - Valid Anagram

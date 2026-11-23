@@ -1,3 +1,5 @@
+package _02_hashing._0001_two_sum
+
 /*
  * 0001 - Two Sum
  * https://leetcode.com/problems/two-sum/

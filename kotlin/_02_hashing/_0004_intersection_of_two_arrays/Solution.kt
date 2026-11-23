@@ -1,3 +1,4 @@
+package _02_hashing._0004_intersection_of_two_arrays
 
 /*
  * 0004 - Intersection of Two Arrays
